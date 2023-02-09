@@ -56,8 +56,6 @@ class _WebLayoutState extends State<WebLayout> {
                     const Text(
                       'DANIEL GRAYSON',
                       style: TextStyle(
-                        fontFamily: 'Qualy',
-                        fontWeight: FontWeight.w500,
                         color: Colors.white,
                         fontSize: 15,
                       ),
