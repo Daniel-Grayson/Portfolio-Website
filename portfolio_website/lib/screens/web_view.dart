@@ -11,61 +11,94 @@ class _WebLayoutState extends State<WebLayout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        title: const Text(
-          'DANIEL GRAYSON',
-          style: TextStyle(fontSize: 15, color: Colors.white),
-        ),
-        centerTitle: true,
-        leading: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: const [
-            Text(
-              'PROJECTS',
-              style: TextStyle(fontSize: 15, color: Colors.white),
-            ),
-            Text(
-              'CONTACT',
-              style: TextStyle(fontSize: 15, color: Colors.white),
-            ),
-            Text(
-              'RESUME',
-              style: TextStyle(fontSize: 15, color: Colors.white),
+      body: SingleChildScrollView(
+        child: Stack(
+          children: [
+            Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage("images/daniel.png"),
+                    fit: BoxFit.cover,
+                  ),
+                )),
+            Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Row(
+                      children: const [
+                        Text(
+                          'PROJECTS',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                          ),
+                        ),
+                        Text(
+                          'CONTACT',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                          ),
+                        ),
+                        Text(
+                          'RESUME',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                          ),
+                        )
+                      ],
+                    ),
+                    const Text(
+                      'DANIEL GRAYSON',
+                      style: TextStyle(
+                        fontFamily: 'Qualy',
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                        fontSize: 15,
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                            width: 25,
+                            height: 25,
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage("images/behanceicon.png"),
+                                fit: BoxFit.cover,
+                              ),
+                            )),
+                        Container(
+                            width: 25,
+                            height: 25,
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage("images/dribbbleicon.png"),
+                                fit: BoxFit.cover,
+                              ),
+                            )),
+                        Container(
+                            width: 25,
+                            height: 25,
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage("images/linkedInicon.png"),
+                                fit: BoxFit.cover,
+                              ),
+                            )),
+                      ],
+                    )
+                  ],
+                )
+              ],
             )
           ],
         ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.camera,
-              color: Colors.white,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.camera,
-              color: Colors.white,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.camera,
-              color: Colors.white,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.camera,
-              color: Colors.white,
-            ),
-          )
-        ],
       ),
     );
   }
