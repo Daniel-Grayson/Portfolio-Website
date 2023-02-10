@@ -29,6 +29,7 @@ class _WebLayoutState extends State<WebLayout> {
                 Padding(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 30.0,
+                    vertical: 10,
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -125,7 +126,7 @@ class _WebLayoutState extends State<WebLayout> {
                   ),
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.40,
+                  height: MediaQuery.of(context).size.height * 0.30,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30.0),
@@ -163,13 +164,13 @@ class _WebLayoutState extends State<WebLayout> {
                   ),
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.25,
+                  height: MediaQuery.of(context).size.height * 0.33,
                 ),
                 const Text(
                   'DANIEL GRAYSON',
                   style: TextStyle(
                     letterSpacing: 40,
-                    wordSpacing: 20,
+                    wordSpacing: 25,
                     color: Colors.white,
                     fontSize: 80,
                   ),

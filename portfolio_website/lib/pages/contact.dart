@@ -19,7 +19,7 @@ class _ContactPageState extends State<ContactPage> {
         child: Padding(
           padding: const EdgeInsets.symmetric(
             horizontal: 70.0,
-            // vertical: 20,
+            vertical: 10,
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -194,9 +194,6 @@ class _ContactPageState extends State<ContactPage> {
                       ),
                     ],
                   ),
-                  Column(
-                    children: [TextField()],
-                  )
                 ],
               )
             ],
